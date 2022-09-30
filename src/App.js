@@ -1,15 +1,14 @@
 import './App.css';
-import CardGroup from './components/CardGroup/CardGroup';
+import { Button, Spinner } from 'react-bootstrap';
+import GridCard from './components/GridCard/GridCard';
 
 function App() {
   return (
     <div className="App">
-      <div className="spinner-border text-danger" role="status">
-        <span className="visually-hidden">Loading...</span>
-      </div>
-
-      <CardGroup></CardGroup>
-
+      <button>Plain Button</button>
+      <Button variant="danger">My Button</Button>
+      <Spinner animation="grow" variant="danger" />
+      <GridCard></GridCard>
     </div>
   );
 }
